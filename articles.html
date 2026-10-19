@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文章｜方法拆解与真实记录 · AI一起成长营</title>
+<meta name="description" content="AI一起成长营文章列表：方法拆解、真实使用记录、踩坑复盘。骨架版先放结构与占位，具体文章会陆续补。">
+<link rel="canonical" href="https://hxtao1001.github.io/ai-together-site-preview/articles.html">
+<meta name="theme-color" content="#08192B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI一起成长营">
+<meta property="og:title" content="文章｜方法拆解与真实记录">
+<meta property="og:description" content="方法拆解、真实使用记录、踩坑复盘。">
+<meta property="og:url" content="https://hxtao1001.github.io/ai-together-site-preview/articles.html">
+<meta property="og:image" content="assets/img/data-qc.jpg">
+<meta property="og:image:alt" content="内容质检前后对比图">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="articles">
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="AI一起成长营 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.4l2.5 6.3 6.6 2.4-6.6 2.4L12 21.6l-2.5-8.1L3 11.1l6.5-2.4L12 2.4z"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>AI一起成长营</strong>
+        <small>7天AI懂你 · 知识星球年费社群</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <ul>
+        <li><a href="index.html" data-nav="home">首页</a></li>
+        <li><a href="videos.html" data-nav="videos">免费内容</a></li>
+        <li><a href="roadmap.html" data-nav="roadmap">学习地图</a></li>
+        <li><a href="articles.html" data-nav="articles">文章</a></li>
+        <li><a href="weekly.html" data-nav="weekly">周刊</a></li>
+        <li><a href="docs.html" data-nav="docs">文档库</a></li>
+        <li><a href="feed.html" data-nav="feed">社群动态</a></li>
+        <li><a class="nav-cta" href="join.html" data-nav="join">加入社群</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head page-head--cream">
+    <div class="container">
+      <p class="eyebrow">文章</p>
+      <h1>方法拆解与真实记录</h1>
+      <p>只讲我们真跑过的：怎么让 AI 懂你、哪里会卡住、我们踩过哪些坑。骨架版先放 9 个位置，文章陆续补。</p>
+      <div class="btn-row" style="margin-top:22px">
+        <a class="btn btn--primary" href="join.html">加入社群看案例问答
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--outline" href="videos.html">先看免费视频</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <!-- SLOT: 分类筛选 · 静态按钮，接后端后按分类过滤 -->
+      <div class="filter-row" role="group" aria-label="文章分类">
+        <button class="filter-chip" type="button" aria-pressed="true">全部</button>
+        <button class="filter-chip" type="button" aria-pressed="false">方法</button>
+        <button class="filter-chip" type="button" aria-pressed="false">案例</button>
+        <button class="filter-chip" type="button" aria-pressed="false">复盘</button>
+        <button class="filter-chip" type="button" aria-pressed="false">工具</button>
+      </div>
+
+      <!-- SLOT: 文章列表 · 9 篇；字段：封面/日期/作者/标题/摘要/详情页链接 -->
+      <div class="article-list" id="article-list">
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+        <article class="article-row">
+          <div class="article-cover-slot">封面占位 · 16:9</div>
+          <div>
+            <p class="post-meta"><span>日期占位</span><span>作者占位</span><span>阅读时长占位</span></p>
+            <h2><a href="articles/_template.html">文章标题占位 · 14 字</a></h2>
+            <p>摘要占位 · 一句话说清这篇讲什么（≤60 字），让人决定要不要点开。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="slot" style="margin-top:22px">
+        <span class="slot-label">内容待填 · 文章说明</span>
+        <p class="slot-hint">加一篇新文章：复制 <code>articles\_template.html</code>，改名成英文短名（如 <code>ai-doesnt-know-you.html</code>），填完正文后把本页任意一条 <code>.article-row</code> 的标题链接指过去。日期、作者别留空。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <p class="eyebrow">下一步</p>
+        <h2>文章看完，还是「这就是我」？</h2>
+        <p>那就别再自己摸索了。进社群先看新人必读，再决定从哪个模块开始。</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="join.html">扫码加入社群
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--outline" href="roadmap.html">先看学习地图</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="AI一起成长营 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.4l2.5 6.3 6.6 2.4-6.6 2.4L12 21.6l-2.5-8.1L3 11.1l6.5-2.4L12 2.4z"/></svg>
+          </span>
+          <span class="brand-text"><strong>AI一起成长营</strong><small>7天AI懂你 · 知识星球年费社群</small></span>
+        </a>
+        <p>不教你迁就 AI，让 AI 学会你，然后你们一起长。</p>
+        <p class="footer-links"><a href="about.html">关于我们</a> · <a href="roadmap.html">学习地图</a></p>
+        <p class="footer-people">何之州 · 交付动力<br>王梓烨 · 判断动力<br>思涵 · 连接动力</p>
+      </div>
+      <div class="footer-col">
+        <h2>内容</h2>
+        <ul>
+          <li><a href="videos.html">免费内容</a></li>
+          <li><a href="articles.html">文章</a></li>
+          <li><a href="weekly.html">AI 周刊</a></li>
+          <li><a href="changelog.html">更新日志</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>会员</h2>
+        <ul>
+          <li><a href="docs.html">文档库</a></li>
+          <li><a href="feed.html">社群动态</a></li>
+          <li><a href="join.html">加入社群</a></li>
+          <li><a href="login.html">登录与绑定</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>联系</h2>
+        <p>报名二维码见「加入社群」页</p>
+        <p><a href="search.html">站内搜索</a> · <a href="roadmap.html">学习地图</a></p>
+        <p class="footer-icp"><a href="#">苏ICP备（待补）号</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> AI一起成长营 · 7天AI懂你（忆启出品）</p>
+      <p>本站为纯静态展示站：不提供登录、不接在线支付，报名与付款统一在知识星球完成。</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
